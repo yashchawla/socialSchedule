@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1">
+    <children>
+      <AnchorPane layoutX="181.0" layoutY="103.0" prefHeight="440.0" prefWidth="979.0" style="-fx-background-color: white;">
+         <children>
+            <JFXPasswordField labelFloat="true" layoutX="41.0" layoutY="282.0" prefHeight="32.0" prefWidth="508.0" promptText="Password" unFocusColor="#029db2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField labelFloat="true" layoutX="41.0" layoutY="86.0" prefHeight="47.0" prefWidth="508.0" promptText="Username" unFocusColor="#029db2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField layoutX="41.0" layoutY="207.0" prefHeight="47.0" prefWidth="508.0" promptText="Email" unFocusColor="#029db2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField layoutX="37.0" layoutY="344.0" prefHeight="37.0" prefWidth="515.0" promptText="Confirm Password" unFocusColor="#029db2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField labelFloat="true" layoutX="41.0" layoutY="161.0" prefHeight="1.0" prefWidth="508.0" promptText="Phone Number" unFocusColor="#029db2">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton buttonType="RAISED" layoutX="37.0" layoutY="427.0" prefHeight="32.0" prefWidth="515.0" ripplerFill="#004a54" style="-fx-background-color: #004a54;" text="Sign Up" textFill="#f5e1e1">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="28.0" prefHeight="74.0" prefWidth="566.0" text="Register">
+               <font>
+                  <Font name="Arial" size="46.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="727.0" prefHeight="563.0" prefWidth="252.0" style="-fx-background-color: #070046;">
+               <children>
+                  <FontAwesomeIconView fill="#f2f2f2" glyphName="FACEBOOK" layoutX="100.0" layoutY="175.0" size="45" text="ï‚š" />
+                  <FontAwesomeIconView fill="#fcf7f7" glyphName="TWITTER" layoutX="92.0" layoutY="274.0" size="45" />
+                  <FontAwesomeIconView fill="#f5f3f3" glyphName="GOOGLE" layoutX="88.0" layoutY="395.0" size="45" text="ï† " />
+                  <Label alignment="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="74.0" prefWidth="213.0" text="Log In Using" textFill="#f2eeee">
+                     <font>
+                        <Font name="Arial" size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+
+    
+</AnchorPane>

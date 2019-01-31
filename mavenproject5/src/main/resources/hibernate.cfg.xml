@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+        <session-factory>
+                <property name="show_sql">false</property>
+                <property name="format_sql">true</property>
+                <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+                <property name="connection.driver_class">org.sqlite.JDBC</property>
+                <property name="connection.url">jdbc:sqlite:socialScheduler.db</property>
+                <property name="connection.username"></property>
+                <property name="connection.password"></property>
+
+                <property name="hibernate.hbm2ddl.auto">update</property>
+                <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+
+                <mapping class="com.mycompany.mavenproject5.Models.Base.BaseEntity"/>
+                
+                <mapping class="com.mycompany.mavenproject5.Models.Master.ClientType"/>
+                <mapping class="com.mycompany.mavenproject5.Models.Master.ClientMaster"/>
+               <!-- <mapping class="com.mycompany.socialschedule.Models.Master.EmailMaster"/>
+                <mapping class="com.mycompany.socialschedule.Models.Master.SmsMaster"/>
+                <mapping class="com.mycompany.socialschedule.Models.Master.UserMaster"/>
+                
+                <mapping class="com.mycompany.socialschedule.Models.Transaction.EmailTransaction"/>
+                <mapping class="com.mycompany.socialschedule.Models.Transaction.EmailTransactionDetail"/>
+                <mapping class="com.mycompany.socialschedule.Models.Transaction.SmsTransaction"/>
+                <mapping class="com.mycompany.socialschedule.Models.Transaction.SmsTransactionDetail"/>-->
+                
+                
+                 
+         
+                
+        </session-factory>
+</hibernate-configuration>

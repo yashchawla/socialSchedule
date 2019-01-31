@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+      <AnchorPane layoutX="94.0" layoutY="102.0" prefHeight="602.0" prefWidth="571.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="238.0" layoutY="6.0" prefHeight="45.0" prefWidth="106.0" text="Edit Profile-">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="349.0" layoutY="13.0" prefHeight="34.0" prefWidth="168.0" text="Complete your profile">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="28.0" layoutY="90.0" prefHeight="25.0" prefWidth="521.0" promptText="Username" />
+            <JFXTextField layoutX="28.0" layoutY="143.0" prefHeight="25.0" prefWidth="521.0" promptText="Email" />
+            <JFXTextField layoutX="28.0" layoutY="196.0" prefHeight="25.0" prefWidth="521.0" promptText="Company" />
+            <JFXTextField layoutX="28.0" layoutY="250.0" prefHeight="25.0" prefWidth="231.0" promptText="First name" />
+            <JFXTextField layoutX="277.0" layoutY="250.0" prefHeight="25.0" prefWidth="247.0" promptText="Last name" />
+            <JFXTextField layoutX="25.0" layoutY="301.0" prefHeight="25.0" prefWidth="521.0" promptText="Address" />
+            <JFXTextField layoutX="25.0" layoutY="354.0" prefHeight="25.0" prefWidth="521.0" promptText="Company" />
+            <JFXTextField layoutX="23.0" layoutY="406.0" prefHeight="25.0" prefWidth="231.0" promptText="Country" />
+            <JFXTextField layoutX="277.0" layoutY="406.0" prefHeight="25.0" prefWidth="273.0" promptText="Postal Code" />
+            <Label layoutX="28.0" layoutY="457.0" text="About me">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="28.0" layoutY="495.0" prefHeight="60.0" prefWidth="521.0" promptText="Enter here" />
+         </children>
+      </AnchorPane>
+      <FontAwesomeIconView fill="#03a6ef" glyphName="USERS" layoutX="136.0" layoutY="116.0"  size="60" />
+      <AnchorPane layoutX="773.0" layoutY="100.0" prefHeight="361.0" prefWidth="460.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="180.0" fitWidth="180.0" layoutX="144.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="199.0" layoutY="224.0" text="Change picture" />
+            <JFXButton buttonType="RAISED" layoutX="173.0" layoutY="267.0" prefHeight="54.0" prefWidth="135.0" style="-fx-background-color: #03a6ef;" text="Save">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+
+</AnchorPane>

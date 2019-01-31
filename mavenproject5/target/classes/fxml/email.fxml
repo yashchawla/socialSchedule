@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.73" prefHeight="802.0" prefWidth="1349.0" style="-fx-background-color: #d2d3d3;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="50.0" layoutY="50.0" spacing="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox prefHeight="702.0" prefWidth="687.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="375.0">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/ic_local_post_office_black_48dp.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Schedule a Mail">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </HBox>
+                 
+                  <JFXTextArea labelFloat="true" prefHeight="50.0" prefWidth="320.0" promptText="Message" />
+                  <JFXTextField labelFloat="true" promptText="Subject" />
+                  <JFXTextField labelFloat="true" promptText="Reciever's Name" />
+                  <HBox prefHeight="50.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <JFXTextField prefHeight="26.0" prefWidth="355.0" promptText="Attachment" />
+                        <ButtonBar prefHeight="30.0" prefWidth="41.0">
+                           <buttons>
+                              <FontAwesomeIconView glyphName="PAPERCLIP" size="25" text="" wrappingWidth="30.300000190734863" />
+                           </buttons>
+                        </ButtonBar>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+                  <JFXDatePicker defaultColor="#4059a9" prefHeight="30.0" prefWidth="400.0" promptText="Schedule Date" />
+                  <HBox alignment="TOP_RIGHT" prefHeight="60.0" prefWidth="646.0" spacing="20.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" prefHeight="40.0" prefWidth="100.0" text="SEND">
+                           <ripplerFill>
+                              <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="0.8238095238095238" startY="0.26666666666666666">
+                                 <stops>
+                                    <Stop color="#442f96" />
+                                    <Stop color="#1fb281" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                        </JFXButton>
+                        <JFXButton prefHeight="41.0" prefWidth="100.0" text="CANCEL" />
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="TWO_PASS_BOX" color="#000000d6" height="58.06" radius="27.4175" width="53.61" />
+               </effect>
+            </VBox>
+            <VBox prefHeight="702.0" prefWidth="514.0" spacing="20.0" style="-fx-background-color: #ffffff;">
+               <children>
+                   
+                  <TableView editable="true" prefHeight="550.0" prefWidth="513.0">
+                    <columns>
+                      <TableColumn prefWidth="187.0" text="NAME" />
+                      <TableColumn prefWidth="252.0" text="EMAIL" />
+                        <TableColumn minWidth="0.0" prefWidth="73.0" text="SELECT" />
+                    </columns>
+                  </TableView>
+                  <HBox alignment="TOP_RIGHT" prefHeight="65.0" prefWidth="513.0" spacing="20.0">
+                     <children>
+                        <JFXButton prefHeight="41.0" prefWidth="80.0" text="DELETE" />
+                        <JFXButton prefHeight="41.0" prefWidth="80.0" text="ADD" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

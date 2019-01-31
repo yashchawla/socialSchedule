@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="210.0" layoutY="60.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="380.0">
+               <children>
+                  <ButtonBar>
+                     <buttons>
+                        <FontAwesomeIconView glyphName="CLOSE" size="15" wrappingWidth="20.300000190734863" />
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </HBox>
+            <HBox accessibleText="gdfugrtu" alignment="CENTER" opacity="0.95" prefHeight="43.0" prefWidth="375.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <Label text="MESSAGE OVERVIEW">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" spacing="70.0">
+               <children>
+                  <Label text="Message:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea focusColor="#30837d" prefHeight="30.0" prefWidth="200.0" unFocusColor="BLACK" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label text="Receivers Name:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextArea prefHeight="30.0" prefWidth="200.0" unFocusColor="BLACK">
+                     <focusColor>
+                        <LinearGradient endX="1.0" endY="0.014285714285714235" startX="0.9761904761904762" startY="1.0">
+                           <stops>
+                              <Stop color="WHITE" />
+                              <Stop color="#30837d" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </focusColor>
+                  </JFXTextArea>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Date and Time:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField focusColor="#30837d" prefHeight="26.0" prefWidth="195.0" unFocusColor="BLACK" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="71.0" prefWidth="380.0">
+               <children>
+                  <JFXButton prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #e0e0e0;" text="CONFIRM">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
